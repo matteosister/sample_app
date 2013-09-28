@@ -3,7 +3,7 @@
 
 require 'active_support/inflector'
 
-notification :libnotify, timeout: 1
+notification :libnotify, timeout: 2
 
 guard 'spork', :cucumber_env => { 'RAILS_ENV' => 'test' },
       :rspec_env    => { 'RAILS_ENV' => 'test' } do
